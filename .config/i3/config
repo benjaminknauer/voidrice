@@ -58,6 +58,8 @@ exec --no-startup-id unclutter
 exec_always --no-startup-id mpdupdate
 # mpd startup
 exec --no-startup-id mpd
+# start blueman-applet
+exec --no-startup-id bluetooth
 # Podboat automatic queue and download
 exec_always --no-startup-id podentr
 
