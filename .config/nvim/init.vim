@@ -20,6 +20,10 @@ call plug#end()
 	syntax on
 	set encoding=utf-8
 	set number relativenumber
+	imap jj <Esc>
+	set timeoutlen=1000
+	set clipboard+=unnamed
+	set hlsearch
 " Enable autocompletion:
 	set wildmode=longest,list,full
 " Disables automatic commenting on newline:
