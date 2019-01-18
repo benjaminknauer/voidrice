@@ -15,6 +15,10 @@ Plug 'vimwiki/vimwiki'
 call plug#end()
 
 " Some basics:
+	if has('nvim')
+		set inccommand=nosplit
+	:endif
+	set incsearch
 	set nocompatible
 	filetype plugin on
 	syntax on
