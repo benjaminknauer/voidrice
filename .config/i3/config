@@ -84,9 +84,11 @@ set_from_resource $cyan		color14 #000000
 set_from_resource $darkwhite	color7  #000000
 set_from_resource $white	color15 #000000
 set $transparent		#00000000
+set $bordercolor		#e50000
+set $indicatorcolor		#EEEE00
 
-#                       BORDER		BACKGROUND	TEXT		INDICATOR   CHILD_BORDER
-client.focused		$red		$red		$magenta	$darkmagenta		$darkblue
+#                       BORDER		BACKGROUND	TEXT		INDICATOR   		CHILD_BORDER
+client.focused		$bordercolor	$red		$magenta	$indicatorcolor		$bordercolor
 client.unfocused	$transparent	$blue		$white		$darkblue		$darkblack
 client.focused_inactive	$transparent	$blue		$white		$darkblue		$darkblack
 client.urgent		$darkred	$darkred	$black		$darkred		$darkred
