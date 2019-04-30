@@ -1,6 +1,10 @@
 #!/bin/bash
 #[ -f "$HOME/.shortcuts" ];  source "$HOME/.shortcuts" # Load shortcut aliases
 
+# Security Alias
+alias rrm="rm"
+alias rm="trash"
+
 # System Maintainence
 alias mw="~/.config/mutt/mutt-wizard.sh"
 alias sdn="sudo shutdown now"
@@ -32,3 +36,5 @@ alias ccat="highlight --out-format=ansi" # Color cat - print file with syntax hi
 alias yt="youtube-dl --add-metadata -i" # Download video link
 alias yta="yt -x -f bestaudio/best" # Download only audio
 alias YT="youtube-viewer"
+
+thefuck --alias | source

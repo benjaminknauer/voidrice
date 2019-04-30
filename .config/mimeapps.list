@@ -6,3 +6,9 @@ application/pdf=zathura.desktop;
 image/png=sxiv.desktop;
 image/jpeg=sxiv.desktop;
 image/gif=sxiv.desktop;
+x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
+
+[Added Associations]
+image/jpeg=gedit.desktop;shotwell-viewer.desktop;eog.desktop;
+image/png=shotwell-viewer.desktop;
+application/x-virtualbox-vdi=virtualbox.desktop;

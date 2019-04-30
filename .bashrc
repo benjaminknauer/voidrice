@@ -44,3 +44,7 @@ shdl() { curl -O $(curl -s http://sci-hub.tw/"$@" | grep location.href | grep -o
 se() { du -a ~/.scripts/* ~/.config/* | awk '{print $2}' | fzf | xargs  -r $EDITOR ;}
 sv() { vcopy "$(du -a ~/.scripts/* ~/.config/* | awk '{print $2}' | fzf)" ;}
 vf() { fzf | xargs -r -I % $EDITOR % ;}
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/knauer/.sdkman"
+[[ -s "/home/knauer/.sdkman/bin/sdkman-init.sh" ]] && source "/home/knauer/.sdkman/bin/sdkman-init.sh"

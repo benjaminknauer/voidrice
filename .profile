@@ -1,10 +1,12 @@
 #!/bin/bash
 # Profile file. Runs on login.
 
+export PATH=~/.composer/vendor/bin:$PATH
+
 # Adds `~/.scripts` and all subdirectories to $PATH
 export PATH="$PATH:$(du "$HOME/.scripts/" | cut -f2 | tr '\n' ':')"
 export EDITOR="vim"
-export TERMINAL="qterminal"
+export TERMINAL="gnome-terminal"
 export BROWSER="firefox"
 export READER="zathura"
 export FILE="ranger"
